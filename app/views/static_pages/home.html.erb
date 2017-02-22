@@ -1,5 +1,12 @@
 <% provide(:title, "Home") %>
-<h1>Welcome</h1>
-<p>
-  Checkout out my work!
-</p>
+<<div class="center jumbotron">
+  <h1>Welcome!</h1>
+
+  <h2>
+    This website showcases the work of Kieran P. Davis.
+  </h2>
+
+</div>
+
+<%= link_to image_tag("forest.JPG", alt: "Me", id: "home_photo"),
+            about_url %>
