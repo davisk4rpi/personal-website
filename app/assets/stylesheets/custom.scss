@@ -4,6 +4,7 @@
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
+$gray-medium-dark: #555;
 
 /* universal */
 
@@ -17,6 +18,12 @@ section {
 
 textarea {
   resize: vertical;
+}
+
+.btn-primary {
+  background-color: $gray-medium-light;
+  color: $gray-dark;
+  border-color: $gray-dark;
 }
 
 .center {
@@ -69,7 +76,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #555;
+  color: $gray-dark;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -113,7 +120,7 @@ footer {
   }
 }
 
-/* footer */
+/* resume */
 
 #resume {
   width: 850px;
@@ -121,4 +128,8 @@ footer {
   border: none;
   display: block;
   margin: 0 auto;
+}
+
+.google-docs {
+  margin-top: 30px;
 }
