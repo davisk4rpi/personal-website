@@ -1,0 +1,2 @@
+module WorkColllectionHelper
+end
