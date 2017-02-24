@@ -20,6 +20,10 @@ textarea {
   resize: vertical;
 }
 
+.top {
+  margin-top: 5%;
+}
+
 .btn-primary {
   background-color: $gray-medium-light;
   color: $gray-dark;
@@ -148,8 +152,11 @@ footer {
 
 .work {
   vertical-align: middle;
+  text-align: center;
   img {
     max-width: 75%;
+    display: block;
+    margin: auto;
     padding: 1px;
     border: 1px solid black;
     &:hover {
