@@ -165,3 +165,18 @@ footer {
     }
   }
 }
+
+.panel-body {
+  img {
+    max-width: 80%;
+    display: block;
+    margin: 5% auto;
+    &:hover {
+      padding: 0px;
+      border: 1px solid $gray-darker;
+    }
+  }
+  .modal-img {
+    max-width: 100%;
+  }
+}
