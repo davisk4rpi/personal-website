@@ -8,20 +8,11 @@
   </p>
 </div>
 <div class="col-md-4 work">
-  <h3>Boeing Research & Technology</h3>
-  <%= link_to image_tag("boeing/boeing_logo.png",
-                        alt: "Boeing",
-                        id: "boeing_logo"), work_boeing_url %>
+  <%= render "boeing_tile" %>
 </div>
 <div class="col-md-4 work">
-  <h3>User-Centered Design</h3>
-  <%= link_to image_tag("registrar/UW_logo.png",
-                        alt: "University of Washington",
-                        id: "uw_logo"),work_ucd_url %>
+  <%= render "ucd_tile" %>
 </div>
 <div class="col-md-4 work">
-  <h3>Software Development</h3>
-  <%= link_to image_tag("coding_brain.png",
-                        alt: "Software Development",
-                        id: "software_development"),work_developer_url %>
+  <%= render "developer_tile" %>
 </div>

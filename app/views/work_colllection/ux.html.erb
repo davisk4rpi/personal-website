@@ -1,2 +1,22 @@
-<h1>WorkColllection#ux</h1>
-<p>Find me in app/views/work_colllection/ux.html.erb</p>
+<div class="top center jumbotron">
+  <h1>User-Centered Design</h1>
+  <h3>University of Washington</h3>
+</div>
+<!-- Nav tabs -->
+ <ul class="nav nav-tabs" role="tablist">
+   <li role="presentation" class="active">
+     <a href="#registrar" aria-controls="registra" role="tab" data-toggle="tab">Office of the Registrar</a>
+   </li>
+   <li role="presentation">
+     <a href="#laud_social" aria-controls="laud_social" role="tab" data-toggle="tab">Laud Social</a>
+   </li>
+ </ul>
+ <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="registrar">
+      <%= render 'registrar' %>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="laud_social">
+      <%= render 'laud_social' %>
+    </div>
+  </div>
