@@ -3,20 +3,26 @@
   <h3>University of Washington</h3>
 </div>
 <!-- Nav tabs -->
- <ul class="nav nav-tabs" role="tablist">
+ <ul class="nav nav-tabs nav-justified" role="tablist">
    <li role="presentation" class="active">
-     <a href="#registrar" aria-controls="registra" role="tab" data-toggle="tab">Office of the Registrar</a>
+     <a href="#registrar" aria-controls="registrar" role="tab" data-toggle="tab" class="work-tab">Office of the Registrar</a>
    </li>
    <li role="presentation">
-     <a href="#laud_social" aria-controls="laud_social" role="tab" data-toggle="tab">Laud Social</a>
+     <a href="#laud_social" aria-controls="laud_social" role="tab" data-toggle="tab" class="work-tab">Laud Social</a>
    </li>
  </ul>
  <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="registrar">
+      <%= link_to image_tag("registrar/UW_logo.png",
+                            alt: "University of Washington",
+                            class: "project-image"),work_ucd_url %>
       <%= render 'registrar' %>
     </div>
     <div role="tabpanel" class="tab-pane" id="laud_social">
+      <%= link_to image_tag("laud_social/laud_social_logo.png",
+                            alt: "University of Washington",
+                            class: "project-image"),work_ucd_url %>
       <%= render 'laud_social' %>
     </div>
   </div>

@@ -166,6 +166,10 @@ footer {
   }
 }
 
+.nav-tabs > li.active > a {
+  background-color: $gray-medium-light;
+}
+
 .panel-body {
   img {
     max-width: 80%;
@@ -179,4 +183,11 @@ footer {
   .modal-img {
     max-width: 100%;
   }
+}
+
+.project-image {
+  display: block;
+  margin: auto;
+  width: 150px;
+  padding: 10px;
 }
