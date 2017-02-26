@@ -1,0 +1,86 @@
+<div class="panel-group" id="rubyaccordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="rubyheadingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#rubyaccordion"
+            href="#rubycollapseOne" aria-expanded="true" aria-controls="rubycollapseOne">
+          Background
+        </a>
+      </h4>
+    </div>
+    <div id="rubycollapseOne" class="panel-collapse collapse in"
+          role="tabpanel" aria-labelledby="rubyheadingOne">
+      <div class="panel-body">
+        <%= render "work_colllection/ruby/background_body" %>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="rubyheadingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse"
+            data-parent="#rubyaccordion" href="#rubycollapseTwo" aria-expanded="false"
+            aria-controls="rubycollapseTwo">
+          Meeting With Stakeholders and Designing the Tests
+        </a>
+      </h4>
+    </div>
+    <div id="rubycollapseTwo" class="panel-collapse collapse"
+          role="tabpanel" aria-labelledby="rubyheadingTwo">
+      <div class="panel-body">
+        <%= render "work_colllection/ruby/planning_body" %>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="rubyheadingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse"
+            data-parent="#rubyaccordion" href="#rubycollapseThree"
+            aria-expanded="false" aria-controls="rubycollapseThree">
+          Performing the Tests
+        </a>
+      </h4>
+    </div>
+    <div id="rubycollapseThree" class="panel-collapse collapse"
+          role="tabpanel" aria-labelledby="rubyheadingThree">
+      <div class="panel-body">
+        <%= render "work_colllection/ruby/testing_body" %>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="rubyheadingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse"
+            data-parent="#rubyaccordion" href="#rubycollapseFour" aria-expanded="false"
+            aria-controls="rubycollapseFour">
+          Analyzing the Results
+        </a>
+      </h4>
+    </div>
+    <div id="rubycollapseFour" class="panel-collapse collapse"
+          role="tabpanel" aria-labelledby="rubyheadingFour">
+      <div class="panel-body">
+        <%= render "work_colllection/ruby/analyzing_body" %>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="rubyheadingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse"
+            data-parent="#rubyaccordion" href="#rubycollapseFive" aria-expanded="false"
+            aria-controls="rubycollapseFive">
+          Results
+        </a>
+      </h4>
+    </div>
+    <div id="rubycollapseFive" class="panel-collapse collapse"
+          role="tabpanel" aria-labelledby="rubyheadingFive">
+      <div class="panel-body">
+        <%= render "work_colllection/ruby/results_body" %>
+      </div>
+    </div>
+  </div>
+</div>
