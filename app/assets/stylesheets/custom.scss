@@ -6,6 +6,15 @@
 $gray-medium-light: #eaeaea;
 $gray-medium-dark: #555;
 
+@mixin readable {
+  font-size: 1.2em;
+  line-height: 1.7em;
+  max-width: 40em;
+  display: block;
+  margin: auto;
+}
+
+
 /* universal */
 
 body {
@@ -59,7 +68,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -68,8 +77,13 @@ h2 {
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.7em;
+  @include readable;
+  padding-bottom: 1em;
+}
+.panel-group, .nav-justified  {
+  max-width: 960px;
+  display: block;
+  margin: auto;
 }
 
 /* header */
@@ -176,8 +190,20 @@ footer {
       border: 1px solid $gray-darker;
     }
   }
+  img.project-background-image:hover {
+    padding: 0px;
+    border: none;
+  }
+  .col-md-6 {
+    display: block;
+    margin: auto;
+    float: none;
+  }
   .modal-img {
     max-width: 100%;
+  }
+  ul {
+    @include readable;
   }
 }
 
