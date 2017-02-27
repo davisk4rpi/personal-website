@@ -186,7 +186,7 @@ footer {
     display: block;
     margin: 5% auto;
     &:hover {
-      padding: 0px;
+      padding: 1px;
       border: 1px solid $gray-darker;
     }
   }
@@ -197,7 +197,6 @@ footer {
   .col-md-6 {
     display: block;
     margin: auto;
-    float: none;
   }
   .modal-img {
     max-width: 100%;

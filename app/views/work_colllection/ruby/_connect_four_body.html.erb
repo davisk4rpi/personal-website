@@ -1,19 +1,26 @@
-<p>
-  Since the app was still in its infancy, some of the biggest issues could be
-  attributed to buggy programming and not the design. There were, however,
-  issues with some of the feature interactions resulting in incomplete tasks
-  during testing. Also, some terminology refinement was necessary as some of
-  the participants were unfamiliar with the labeling of features.
-</p>
+<div class="col-md-8">
+  <p>
+    Although it's simpler game than chess,
+    <%= link_to "Connect Four", "https://en.wikipedia.org/wiki/Connect_Four" %>
+    was another useful project. For this project, there was a focus on
+    Test-Driven Development and Object-Oriented Programing. Both Chess and
+    Connect Four allowed me to work with complex data structures to determine
+    win conditions.
+  </p>
+  <p>
+    Check out the code on
+    <%= link_to "GitHub", "https://github.com/davisk4rpi/top_connect_four" %>
+  </p>
+</div>
 <!-- Image trigger modals -->
-<div class="col-md-6">
-  <%= image_tag("laud_social/findings.png",
-                alt: "Findings",
+<div class="col-md-4">
+  <%= image_tag("ruby/connect_four.png",
+                alt: "Connect Four Gameplay",
                 'data-toggle': "modal",
-                'data-target': "#findings")%>
+                'data-target': "#connect_four")%>
   <!-- Modal -->
-  <div class="modal fade" id="findings" tabindex="-1" role="image"
-        aria-labelledby="findings-Label">
+  <div class="modal fade" id="connect_four" tabindex="-1" role="image"
+        aria-labelledby="connect_four-Label">
     <div class="modal-dialog modal-lg" role="image">
       <div class="modal-content">
         <div class="modal-body">
@@ -21,8 +28,8 @@
                   aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <%= image_tag("laud_social/findings.png",
-                        alt: "Findings",
+          <%= image_tag("ruby/connect_four.png",
+                        alt: "Connect Four Gameplay",
                         class: "modal-img")%>
         </div>
       </div>
