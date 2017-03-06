@@ -28,7 +28,16 @@
           <li><%= link_to "Software Development", work_developer_url %></li>
           <li role="separator" class="divider"></li>
           <li><%= link_to "Resume", resume_url %></li>
-          <li><%= link_to "GitHub", 'https://github.com/davisk4rpi' %></li>
+          <li>
+            <a href="https://github.com/davisk4rpi", target: "_blank">
+              <%= image_tag("icons/Github.png", alt: "", class: "icon") %> GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/kieran-davis/", target: "_blank">
+              LinkedIn<%= image_tag("icons/Linkedin.png", alt: "", class: "icon") %>
+            </a>
+          </li>
           <li><%= link_to "LinkedIn", 'https://www.linkedin.com/in/kieran-davis/' %></li>
           <li><%= link_to "About", about_url %></li>
         </ul>

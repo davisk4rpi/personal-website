@@ -54,6 +54,14 @@ textarea {
   margin-top: -25px;
 }
 
+.icon {
+  height: 32px;
+  margin: 10px;
+  &:hover {
+    -webkit-filter: brightness(80%);
+  }
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -122,6 +130,12 @@ p {
   font-size: 32px;
 }
 
+header {
+  .icon {
+    float: right;
+  }
+}
+
 /* footer */
 
 footer {
@@ -135,7 +149,7 @@ footer {
       color: $gray-darker;
     }
   }
-  small {
+  .left {
     float: left;
   }
   ul {
@@ -146,6 +160,19 @@ footer {
       margin-left: 15px;
     }
   }
+}
+
+.flex-center {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
 }
 
 /* resume */
