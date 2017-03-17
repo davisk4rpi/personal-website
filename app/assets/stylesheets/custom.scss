@@ -29,6 +29,16 @@ $gray-medium-dark: #555;
   margin: 8px;
 }
 
+.brand-logo {
+  margin-top: 8px;
+  text-transform: uppercase;
+  line-height: 24px;
+  .subtitle {
+    font-size: 1rem;
+    line-height: 10px;
+  }
+}
+
 .side-nav{
   a.valign-wrapper {
     @extend .valign-wrapper;
