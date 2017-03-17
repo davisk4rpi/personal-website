@@ -1,5 +1,15 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import "materialize/components/color";
+/* https://www.materialpalette.com/cyan/orange */
+
+$primary-color: color("blue-grey", "base") !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+
+$secondary-color: color("green", "darken-2") !default;
+$input-success-color: color("green", "base") !default;
+$input-error-color: color("red", "base") !default;
+$link-color: color("blue", "darken-3") !default;
+@import "materialize";
 
 /* mixins, variables, etc. */
 
@@ -14,240 +24,13 @@ $gray-medium-dark: #555;
   margin: auto;
 }
 
-
-/* universal */
-
-body {
-  padding-top: 90px;
-}
-
-section {
-  overflow: auto;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.btn-primary {
-  background-color: $gray-medium-light;
-  color: $gray-dark;
-  border-color: $gray-dark;
-}
-
-.center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
-}
-
-.jumbotron {
-  background-color: #fff;
-}
-
-#home_photo {
-  width: 100%;
-  max-width: 900px;
-  display: block;
-  margin: auto;
-  margin-top: -25px;
-}
-
 .icon {
-  height: 32px;
-  margin: 10px;
-  &:hover {
-    -webkit-filter: brightness(80%);
+  width: 32px;
+  margin: 8px;
+}
+
+.side-nav{
+  a.valign-wrapper {
+    @extend .valign-wrapper;
   }
-}
-
-/* typography */
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1.3em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-weight: normal;
-  color: #777;
-  max-width: 40em;
-}
-
-p {
-  @include readable;
-  padding-bottom: 1em;
-}
-.panel-group, .nav-justified  {
-  max-width: 960px;
-  display: block;
-  margin: auto;
-}
-
-/* header */
-
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: $gray-dark;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  &:hover {
-    color: #777;
-    text-decoration: none;
-  }
-}
-
-#logo-subtitle {
-  float: left;
-  color: #666;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.small-nav {
-  float: right;
-  margin: 15px;
-}
-
-.small-dropdown {
-  font-size: 32px;
-}
-
-header {
-  .icon {
-    float: right;
-  }
-}
-
-/* footer */
-
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
-  a {
-    color: $gray;
-    &:hover {
-      color: $gray-darker;
-    }
-  }
-  .left {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 15px;
-    }
-  }
-}
-
-.flex-center {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
-}
-
-/* resume */
-
-#resume {
-  width: 850px;
-  height: 1000px;
-  border: none;
-  display: block;
-  margin: 0 auto;
-}
-
-/* about */
-
-#about_photo {
-  max-width: 75%;
-  display: block;
-  margin: 50px auto;
-}
-
-h2.skill-ribbon {
-  margin-top: 50px;
-}
-
-/* work */
-
-.work {
-  vertical-align: middle;
-  text-align: center;
-  img {
-    max-width: 75%;
-    display: block;
-    margin: auto;
-    padding: 1px;
-    border: 1px solid black;
-    &:hover {
-      padding: 0px;
-      border: 3px solid $gray-darker;
-    }
-  }
-}
-
-.nav-tabs > li.active > a {
-  background-color: $gray-medium-light;
-}
-
-.panel-body {
-  img {
-    max-width: 80%;
-    display: block;
-    margin: 5% auto;
-    &:hover {
-      padding: 1px;
-      border: 1px solid $gray-darker;
-    }
-  }
-  img.project-background-image:hover {
-    padding: 0px;
-    border: none;
-  }
-  .col-md-6 {
-    display: block;
-    margin: auto;
-  }
-  .modal-img {
-    max-width: 100%;
-  }
-  ul {
-    @include readable;
-  }
-}
-
-.project-image {
-  display: block;
-  margin: auto;
-  width: 250px;
-  padding: 10px;
 }
