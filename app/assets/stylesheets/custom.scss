@@ -30,10 +30,15 @@ $gray-medium-dark: #555;
   margin: auto 8px;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Navigation */
 
 .brand-logo {
   margin-top: 8px;
+  margin-left: 8px;
   text-transform: uppercase;
   line-height: 24px;
   .subtitle {
@@ -53,4 +58,8 @@ $gray-medium-dark: #555;
   a.valign-wrapper {
     @extend .valign-wrapper;
   }
+}
+
+.btn {
+  font-weight: bold;
 }

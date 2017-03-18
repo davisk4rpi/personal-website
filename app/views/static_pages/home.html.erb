@@ -1,15 +1,17 @@
 <% provide(:title, "Home") %>
-<div class="top center jumbotron" id="welcome-message">
-  <h1>Welcome!</h1>
-  <div>
-    <h2>Ruby | Rails | Javascript | HTML | CSS | Python</h2>
-    <h2>
-      This website showcases the work of Kieran P. Davis. I am technology
-      generalist with tangible(valuable) skills in manufacturing engineering and web
-      development. My passion is innovation and connectivity.
-    </h2>
+<div class="center-align">
+  <div class="row">
+    <h1>Welcome!</h1>
+    <div>
+      <h4>Ruby | Rails | Javascript | HTML | CSS | Python</h4>
+      <p>
+        This website showcases the work of Kieran P. Davis. I am technology
+        generalist with tangible(valuable) skills in manufacturing engineering and web
+        development. My passion is innovation and connectivity.
+      </p>
+    </div>
+    <%= link_to "Check out my work!", work_url, class: "btn waves-effect waves-blue-grey" %>
   </div>
-  <%= link_to "Check out my work!", work_url, class: "btn btn-lg btn-primary" %>
 </div>
 
 <%= link_to image_tag("forest.png", alt: "Me", id: "home_photo"),
