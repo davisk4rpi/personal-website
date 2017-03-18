@@ -1,21 +1,27 @@
-<footer class="footer">
-  <div class="col-xs-4">
-    <small class="left">
-      Kieran P. Davis, Innovater | Technologist
-    </small>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col m6 s12">
+        <h5 class="white-text">Kieran P. Davis</h5>
+        <p class="grey-text text-lighten-4">Innovator | Technologist</p>
+        <p class="grey-text text-lighten-4">Email: davisk4rpi@gmail.com</p>
+      </div>
+      <div class="col m3 offset-m3 s12">
+        <h5 class="white-text">Navigation</h5>
+        <ul>
+          <li><%= link_to "About", about_path, class:"grey-text text-lighten-3"%></li>
+          <li><%= link_to "Work Summary", work_path, class:"grey-text text-lighten-3"%></li>
+          <li><%= link_to "Contact", resume_path, class:"grey-text text-lighten-3" %></li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="col-xs-4 flex-center">
-    <%= link_to image_tag("icons/Github.png", alt: "GitHub", class: "icon"),
-                          'https://github.com/davisk4rpi', target: "_blank" %>
-    <%= link_to image_tag("icons/Linkedin.png", alt: "LinkedIn", class: "icon"),
-                          'https://www.linkedin.com/in/kieran-davis/', target: "_blank" %>
-  </div>
-  <div class="col-xs-4 flex-center">
-    <nav>
+  <div class="footer-copyright">
+    <div class="container center-align">
       <ul>
-        <li><%= link_to "About",   about_url %></li>
-        <li>davisk4rpi@gmail.com</li>
+        <li><%= link_to image_tag("icons/Github.png", alt: "GitHub", class: "icon"), 'https://github.com/davisk4rpi', target: "_blank" %></li>
+        <li><%= link_to image_tag("icons/Linkedin.png", alt: "LinkedIn", class: "icon"), 'https://www.linkedin.com/in/kieran-davis/', target: "_blank" %></li>
       </ul>
-    </nav>
+    </div>
   </div>
 </footer>
