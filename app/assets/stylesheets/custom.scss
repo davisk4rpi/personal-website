@@ -24,6 +24,12 @@ $gray-medium-dark: #555;
   margin: auto;
 }
 
+a.hover {
+  &:hover {
+    -webkit-filter: brightness(80%);
+  }
+}
+
 .icon {
   width: 32px;
   display: inline;
