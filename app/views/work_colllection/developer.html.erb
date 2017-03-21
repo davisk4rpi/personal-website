@@ -1,23 +1,25 @@
 <% provide(:title, "Web Development") %>
-<div class="top center jumbotron">
-  <h1>Software Development</h1>
-  <h3>Ruby, Rails, and Neverending Self-Improvement</h3>
-</div>
-<!-- Nav tabs -->
- <ul class="nav nav-tabs nav-justified" role="tablist">
-   <li role="presentation" class="active">
-     <a href="#ruby" aria-controls="ruby" role="tab" data-toggle="tab" class="work-tab">Ruby, the coding language</a>
-   </li>
-   <li role="presentation">
-     <a href="#rails" aria-controls="rails" role="tab" data-toggle="tab" class="work-tab">Web Development Through Rails</a>
-   </li>
- </ul>
- <!-- Tab panes -->
-<div class="tab-content">
-  <div role="tabpanel" class="tab-pane active" id="ruby">
-    <%= render 'ruby' %>
+<div class="container">
+  <div class="top center jumbotron">
+    <h1>Software Development</h1>
+    <h3>Ruby, Rails, and Neverending Self-Improvement</h3>
   </div>
-  <div role="tabpanel" class="tab-pane" id="rails">
-    <%= render 'rails' %>
+  <!-- Nav tabs -->
+   <ul class="nav nav-tabs nav-justified" role="tablist">
+     <li role="presentation" class="active">
+       <a href="#ruby" aria-controls="ruby" role="tab" data-toggle="tab" class="work-tab">Ruby, the coding language</a>
+     </li>
+     <li role="presentation">
+       <a href="#rails" aria-controls="rails" role="tab" data-toggle="tab" class="work-tab">Web Development Through Rails</a>
+     </li>
+   </ul>
+   <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="ruby">
+      <%= render 'ruby' %>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="rails">
+      <%= render 'rails' %>
+    </div>
   </div>
 </div>
