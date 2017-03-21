@@ -1,20 +1,26 @@
 @import "materialize/components/color";
 /* https://www.materialpalette.com/cyan/orange */
 
-$primary-color: color("blue-grey", "base") !default;
+$primary-color: color("red", "darken-2") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: color("green", "darken-2") !default;
+$secondary-color: color("cyan", "darken-2") !default;
 $input-success-color: color("green", "base") !default;
 $input-error-color: color("red", "base") !default;
 $link-color: color("blue", "darken-3") !default;
+
+$sidenav-font-color: $primary-color !default;
 @import "materialize";
 
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
 $gray-medium-dark: #555;
+
+.primary-color-text {
+  color: $primary-color;
+}
 
 @mixin readable {
   font-size: 1.2em;
@@ -38,6 +44,10 @@ a.hover {
 
 img {
   max-width: 100%;
+}
+
+.marginalize-top {
+  margin-top: 10px;
 }
 
 /* Navigation */

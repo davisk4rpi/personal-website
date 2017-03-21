@@ -1,44 +1,48 @@
 <% provide(:title, "About") %>
-<%= render 'static_pages/skills' %>
-<div class="row about_page">
-  <div class="col l6 m8 offset-m2 s10 offset-s1">
-    <%= image_tag("headshot.png", alt: "Professional Me", id: "about_photo") %>
+<div class="container flow-text">
+  <div class="row">
+    <%= render 'static_pages/skills' %>
   </div>
-  <div class="col l6 s12">
-    <h2 class="center-align">Who Am I?</h2>
-    <p>
-      A highly technical and business-minded innovator with a hybrid background
-      in aerospace manufacturing and web development. I am known for providing
-      simple solutions to complex problems and elevating the performance of others.
-      My projects have ranged from designing 3D printed equipment modifications to
-      machining carbon fiber to building this website.
-    </p>
+  <div class="row about_page">
+    <div class="col l6 m8 offset-m2 s10 offset-s1">
+      <%= image_tag("headshot.png", alt: "Professional Me", id: "about_photo", class: "z-depth-5") %>
+    </div>
+    <div class="col l6 s12">
+      <h2 class="center-align">Who Am I?</h2>
+      <p>
+        A highly technical and business-minded innovator with a hybrid background
+        in aerospace manufacturing and web development. I am known for providing
+        simple solutions to complex problems and elevating the performance of others.
+        My projects have ranged from designing 3D printed equipment modifications to
+        machining carbon fiber to building this website.
+      </p>
+    </div>
   </div>
-</div>
 
-<div class="row">
-  <div class= "col l8 offset-l2 s12"
-    <p>
-      <strong>Send me a message</strong>:<br>I am currently looking for a role as
-      a Full-Stack Web Developer or Product Manager. I am also open to slight
-      deviations from these roles. Please, explore my portfolio/resume and
-      reach out if you think that I would be a good fit at your company.
-      Alternatively, send me a message if you just want to talk about my work or
-      yours. I am always interested in conversation about technology.
-    </p>
-    <p>
-      I am presently employed in a multi-functional role by Boeing Research &
-      Technology. We design and develop cutting edge manufacturing technology for
-      composite materials. I am formally educated in Mechanical & Materials
-      Engineering, Economics, and User-Centered Design. I am a self taught
-      full-stack web developer. These have all contributed to my diverse
-      skillset but I am still constantly expanding my repertoire.
-    </p>
-    <h3>
-      Contact
-    </h3>
-    <p>
-      davisk4rpi@gmail.com
-    </p>
+  <div class="row">
+    <div class= "col l8 offset-l2 s12"
+      <p>
+        <strong>Send me a message</strong>:<br>I am currently looking for a role as
+        a Full-Stack Web Developer or Product Manager. I am also open to slight
+        deviations from these roles. Please, explore my portfolio/resume and
+        reach out if you think that I would be a good fit at your company.
+        Alternatively, send me a message if you just want to talk about my work or
+        yours. I am always interested in conversation about technology.
+      </p>
+      <p>
+        I am presently employed in a multi-functional role by Boeing Research &
+        Technology. We design and develop cutting edge manufacturing technology for
+        composite materials. I am formally educated in Mechanical & Materials
+        Engineering, Economics, and User-Centered Design. I am a self taught
+        full-stack web developer. These have all contributed to my diverse
+        skillset but I am still constantly expanding my repertoire.
+      </p>
+      <h3>
+        Contact
+      </h3>
+      <p>
+        davisk4rpi@gmail.com
+      </p>
+    </div>
   </div>
 </div>
