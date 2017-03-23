@@ -50,6 +50,22 @@ img {
   margin-top: 10px;
 }
 
+.vert-middle {
+  vertical-align: middle;
+  margin: auto;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+.collapsible-header {
+  background-color: $primary-color;
+  border-radius: 5px;
+  color: white;
+  @extend .z-depth-3;
+}
+
 /* Navigation */
 
 .brand-logo {
