@@ -1,23 +1,21 @@
 <% provide(:title, "User-Centered Design") %>
-<div class="top center jumbotron">
-  <h1>User-Centered Design</h1>
-  <h3>University of Washington</h3>
-</div>
-<!-- Nav tabs -->
- <ul class="nav nav-tabs nav-justified" role="tablist">
-   <li role="presentation" class="active">
-     <a href="#registrar" aria-controls="registrar" role="tab" data-toggle="tab" class="work-tab">Office of the Registrar</a>
-   </li>
-   <li role="presentation">
-     <a href="#laud_social" aria-controls="laud_social" role="tab" data-toggle="tab" class="work-tab">Laud Social</a>
-   </li>
- </ul>
- <!-- Tab panes -->
-<div class="tab-content">
-  <div role="tabpanel" class="tab-pane active" id="registrar">
-    <%= render 'registrar' %>
+<div class="container">
+  <div class="row center-align">
+    <h1>User-Centered Design</h1>
+    <h3>University of Washington</h3>
   </div>
-  <div role="tabpanel" class="tab-pane" id="laud_social">
-    <%= render 'laud_social' %>
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab"><a href="#registrar">University Registrar</a></li>
+        <li class="tab"><a href="#laud_social">Laud Social</a></li>
+      </ul>
+    </div>
+    <div id="registrar" class="col s12">
+      <%= render 'registrar' %>
+    </div>
+    <div id="laud_social" class="col s12">
+      <%= render 'laud_social' %>
+    </div>
   </div>
 </div>
