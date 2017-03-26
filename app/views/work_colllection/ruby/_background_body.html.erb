@@ -1,19 +1,21 @@
-<div class="col-md-8">
-  <p>
-    I began my journey to become a web developer with Python. But, by
-    scouring the web for learning resources, I came across
-    <%= link_to "The Odin Project", "http://www.theodinproject.com/" %>.
-  </p>
-  <p>
-    At first, I merely switched to Ruby because of The Odin Project's
-    fantastically deep and diverse coursework, but I quickly developed a
-    fondness for the language. Ruby has been my general-purpose language of
-    choice since.
-  </p>
-</div>
-<div class="col-md-4">
-  <%= link_to image_tag("ruby/ruby_logo.png",
-                        alt: "Ruby Logo",
-                        class: "project-background-image"),
-                        "https://www.ruby-lang.org/en/" %>
+<div class="row">
+  <div class="col m8 s12">
+    <p>
+      I began my journey to become a web developer with Python. But, by
+      scouring the web for learning resources, I came across
+      <%= link_to "The Odin Project", "http://www.theodinproject.com/", target: "_blank"  %>.
+    </p>
+    <p>
+      At first, I merely switched to Ruby because of The Odin Project's
+      fantastically deep and diverse coursework, but I quickly developed a
+      fondness for the language. Ruby has been my general-purpose language of
+      choice since.
+    </p>
+  </div>
+  <div class="col m4 offset-s2 s8">
+    <%= link_to image_tag("ruby/ruby_logo.png",
+                          alt: "Ruby Logo",
+                          class: "project-background-image"),
+                          "https://www.ruby-lang.org/en/", target: "_blank"  %>
+  </div>
 </div>

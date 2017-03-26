@@ -1,15 +1,17 @@
-<div class="col-md-8">
-  <p>
-    Because I am using
-    <%= link_to "The Odin Project", "http://www.theodinproject.com/" %>
-    as my primary learning tool, my entry into web frameworks has been Ruby on
-    Rails. Through my learning of Rails, I have also picked up skills in
-    HTML/CSS, Javascript, and even SQL.
-  </p>
-</div>
-<div class="col-md-4">
-  <%= link_to image_tag("rails/rails.png",
-                        alt: "Rails Logo",
-                        class: "project-background-image"),
-                        "http://rubyonrails.org/" %>
+<div class="row">
+  <div class="col m8 s12">
+    <p>
+      Because I am using
+      <%= link_to "The Odin Project", "http://www.theodinproject.com/", target: "_blank"  %>
+      as my primary learning tool, my entry into web frameworks has been Ruby on
+      Rails. Through my learning of Rails, I have also picked up skills in
+      HTML/CSS, Javascript, and even SQL.
+    </p>
+  </div>
+  <div class="col m4 offset-s2 s8">
+    <%= link_to image_tag("rails/rails.png",
+                          alt: "Rails Logo",
+                          class: "project-background-image"),
+                          "http://rubyonrails.org/" %>
+  </div>
 </div>
