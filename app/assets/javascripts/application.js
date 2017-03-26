@@ -32,3 +32,7 @@ var resetForms = function () {
 document.addEventListener("turbolinks:before-cache", function() {
   resetForms();
 });
+
+$(document).on('ready page:change', function() {
+  Waves.displayEffect();
+});
