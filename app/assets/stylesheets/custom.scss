@@ -10,7 +10,7 @@ $input-success-color: color("green", "base") !default;
 $input-error-color: color("red", "base") !default;
 $link-color: color("blue", "darken-3") !default;
 
-$sidenav-font-color: $primary-color !default;
+$sidenav-font-color: $secondary-color !default;
 @import "materialize";
 
 /* mixins, variables, etc. */
@@ -99,6 +99,9 @@ header {
 .side-nav{
   a.valign-wrapper {
     @extend .valign-wrapper;
+  }
+  #home-icon{
+    color: $secondary-color;
   }
 }
 
