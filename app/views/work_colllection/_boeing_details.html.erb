@@ -1,102 +1,56 @@
-<div class="panel-group" id="boeingaccordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="boeingheadingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#boeingaccordion"
-            href="#boeingcollapseOne" aria-expanded="true" aria-controls="boeingcollapseOne">
-          Background
-        </a>
-      </h4>
+<ul class="collapsible popout" data-collapsible="expandable">
+  <li>
+    <div class="collapsible-header">
+      <div class="left"><i class="material-icons">flight_takeoff</i></div>
+      <div>Background<div>
     </div>
-    <div id="boeingcollapseOne" class="panel-collapse collapse in"
-          role="tabpanel" aria-labelledby="boeingheadingOne">
-      <div class="panel-body">
-        <%= render "work_colllection/boeing/background_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/boeing/background_body" %>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="boeingheadingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse"
-            data-parent="#boeingaccordion" href="#boeingcollapseTwo" aria-expanded="false"
-            aria-controls="boeingcollapseTwo">
-          Software Development
-        </a>
-      </h4>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <div class="left"><i class="material-icons">code</i></div>
+      <div>Software Development</div>
     </div>
-    <div id="boeingcollapseTwo" class="panel-collapse collapse"
-          role="tabpanel" aria-labelledby="boeingheadingTwo">
-      <div class="panel-body">
-        <%= render "work_colllection/boeing/software_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/boeing/software_body" %>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="boeingheadingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse"
-            data-parent="#boeingaccordion" href="#boeingcollapseThree"
-            aria-expanded="false" aria-controls="boeingcollapseThree">
-          Program Management
-        </a>
-      </h4>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <div class="left"><i class="material-icons">whatshot</i></div>
+      <div>Program Management</div>
     </div>
-    <div id="boeingcollapseThree" class="panel-collapse collapse"
-          role="tabpanel" aria-labelledby="boeingheadingThree">
-      <div class="panel-body">
-        <%= render "work_colllection/boeing/management_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/boeing/management_body" %>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="boeingheadingFour">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse"
-            data-parent="#boeingaccordion" href="#boeingcollapseFour" aria-expanded="false"
-            aria-controls="boeingcollapseFour">
-          Manufacturing Design
-        </a>
-      </h4>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <div class="left"><i class="material-icons">build</i></div>
+      <div>Manufacturing Design</div>
     </div>
-    <div id="boeingcollapseFour" class="panel-collapse collapse"
-          role="tabpanel" aria-labelledby="boeingheadingFour">
-      <div class="panel-body">
-        <%= render "work_colllection/boeing/design_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/boeing/design_body" %>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="boeingheadingFive">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse"
-            data-parent="#boeingaccordion" href="#boeingcollapseFive" aria-expanded="false"
-            aria-controls="boeingcollapseFive">
-          Manufacturing Research
-        </a>
-      </h4>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <div class="left"><i class="material-icons">assessment</i></div>
+      <div>Manufacturing Research</div>
     </div>
-    <div id="boeingcollapseFive" class="panel-collapse collapse"
-          role="tabpanel" aria-labelledby="boeingheadingFive">
-      <div class="panel-body">
-        <%= render "work_colllection/boeing/research_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/boeing/research_body" %>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="boeingheadingSix">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse"
-            data-parent="#boeingaccordion" href="#boeingcollapseSix" aria-expanded="false"
-            aria-controls="boeingcollapseSix">
-          Patents/Publications
-        </a>
-      </h4>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <div class="left"><i class="material-icons">lightbulb_outline</i></div>
+      <div>Patents/Publications</div>
     </div>
-    <div id="boeingcollapseSix" class="panel-collapse collapse"
-          role="tabpanel" aria-labelledby="boeingheadingSix">
-      <div class="panel-body">
-        <%= render "work_colllection/boeing/patents_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/boeing/patents_body" %>
     </div>
-  </div>
+  </li>
+</ul>

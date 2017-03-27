@@ -1,53 +1,26 @@
-<p>
-  The original Office of the Registrar’s website was outdated and
-  poorly managed. As seen in the above pictures the design was
-  inconsistent from page to page. Non obvious and technical language
-  was in use all over the site. There was too much information all over
-  that could be found more easily on other university websites.
-</p>
-<!-- Image trigger modals -->
-<div class="col-md-6">
-  <%= image_tag("registrar/registrar-before-1.png",
-                alt: "Before Picture 1",
-                'data-toggle': "modal",
-                'data-target': "#registrar-before-1")%>
-  <!-- Modal -->
-  <div class="modal fade" id="registrar-before-1" tabindex="-1" role="image"
-        aria-labelledby="registrar-before-1-Label">
-    <div class="modal-dialog modal-lg" role="image">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal"
-                  aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <%= image_tag("registrar/registrar-before-1.png",
-                        alt: "Before Picture 1",
-                        class: "modal-img")%>
-        </div>
+<div class="row">
+  <div class="col m8 s12">
+    <p>
+      The original Office of the Registrar’s website was outdated and
+      poorly managed. As seen in the above pictures the design was
+      inconsistent from page to page. Non obvious and technical language
+      was in use all over the site. There was too much information all over
+      that could be found more easily on other university websites.
+    </p>
+  </div>
+  <div class="col m4 s12">
+    <div class="row">
+      <div class="col s12">
+        <%= image_tag("registrar/registrar-before-1.png",
+                      alt: "Before Picture 1",
+                      class: "responsive-img materialboxed")%>
       </div>
     </div>
-  </div>
-</div>
-<div class="col-md-6">
-  <%= image_tag("registrar/registrar-before-2.png",
-              alt: "Before Picture 2",
-              'data-toggle': "modal",
-              'data-target': "#registrar-before-2")%>
-  <!-- Modal -->
-  <div class="modal fade" id="registrar-before-2" tabindex="-1" role="image"
-        aria-labelledby="registrar-before-2-Label">
-    <div class="modal-dialog modal-lg" role="image">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal"
-                  aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <%= image_tag("registrar/registrar-before-2.png",
-                        alt: "Before Picture 2",
-                        class: "modal-img")%>
-        </div>
+    <div class="row">
+      <div class="col s12">
+        <%= image_tag("registrar/registrar-before-2.png",
+                      alt: "Before Picture 2",
+                      class: "responsive-img materialboxed")%>
       </div>
     </div>
   </div>

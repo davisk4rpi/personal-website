@@ -11,7 +11,28 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
+//= require materialize-sprockets
 //= require turbolinks
-//= require bootstrap-sprockets
 //= require_tree .
+
+// Due to issues with the latest versions of turbolinks and rails, here is a
+// work around for reloading js from https://github.com/kossnocorp/jquery.turbolinks/issues/56
+$.turbo.use('turbolinks:load', 'turbolinks:request-start')
+
+var resetForms = function () {
+  // this depends on your use
+  // this is for foundation 6's abide
+  $('form').each(function () {
+    $(this).foundation('destroy');
+  });
+};
+
+document.addEventListener("turbolinks:before-cache", function() {
+  resetForms();
+});
+
+$(document).on('ready page:change', function() {
+  Waves.displayEffect();
+});

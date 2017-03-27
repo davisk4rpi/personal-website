@@ -1,32 +1,34 @@
-<div class="col-md-8">
-  <p>
-    For my User-Centered Web Design course at the University of
-    Washington, I was assigned a team and we were asked to find websites
-    with poor usability, contact the key stakeholders, and redesign the
-    site. For this project, my primary role was as a developer/designer,
-    but since it was a school project, I was involved with every step of
-    the project. This was my first ever project utilizing HTML/CSS.
-  </p>
-  <p>
-    We delivered our final prototype to the Office of the Registrar at
-    the completion of the class. Due to time constraints we were unable
-    to completely build the new website. Since the completion of this
-    project, the Registrar has implemented a new website design which
-    includes some of our recommendations.
-  </p>
-  <p>
-    HTML wireframe hosted by
-    <a href="http://davisk4rpi.github.io/uw_registrar/index.html">GitHub</a>
-  </p>
-  <p>
-    <em>*Since the prototype is limited, I suggest pretending that you are a student
-    looking for their Dean's Letter or an instructor trying to change a student's
-    grade. According to Google Analytics and our surveys, these were the most
-    common user needs.</em>
-  </p>
-</div>
-<div class="col-md-4">
-  <%= image_tag("registrar/UW_logo.png",
-                        alt: "University of Washington",
-                        class: "project-background-image") %>
+<div class="row">
+  <div class="col m8 s12">
+    <p>
+      For my User-Centered Web Design course at the University of
+      Washington, I was assigned a team and we were asked to find websites
+      with poor usability, contact the key stakeholders, and redesign the
+      site. For this project, my primary role was as a developer/designer,
+      but since it was a school project, I was involved with every step of
+      the project. This was my first ever project utilizing HTML/CSS.
+    </p>
+    <p>
+      We delivered our final prototype to the Office of the Registrar at
+      the completion of the class. Due to time constraints we were unable
+      to completely build the new website. Since the completion of this
+      project, the Registrar has implemented a new website design which
+      includes some of our recommendations.
+    </p>
+    <p>
+      HTML wireframe hosted by
+      <%= link_to "GitHub", "http://davisk4rpi.github.io/uw_registrar/index.html", target: "_blank" %>
+    </p>
+    <p>
+      <em>*Since the prototype is limited, I suggest pretending that you are a student
+      looking for their Dean's Letter or an instructor trying to change a student's
+      grade. According to Google Analytics and our surveys, these were the most
+      common user needs.</em>
+    </p>
+  </div>
+  <div class="col m4 s12">
+    <%= image_tag("registrar/UW_logo.png",
+                          alt: "University of Washington",
+                          class: "responsive-img materialboxed") %>
+  </div>
 </div>

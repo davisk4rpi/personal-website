@@ -1,36 +1,20 @@
-<div class="col-md-8">
-  <p>
-    One of my simpler Ruby projects was to create a command line version of
-    <%= link_to "Mastermind", "https://en.wikipedia.org/wiki/Mastermind_(board_game)" %>.
-    For this project, there was a focus on Object-Oriented Programming. I also
-    created a weak AI to play with.
-  </p>
-  <p>
-    Check out the code on
-    <%= link_to "GitHub", "https://github.com/davisk4rpi/mastermind" %>
-  </p>
-</div>
-<!-- Image trigger modals -->
-<div class="col-md-4">
-  <%= image_tag("ruby/mastermind.png",
-                alt: "Mastermind Gameplay",
-                'data-toggle': "modal",
-                'data-target': "#mastermind")%>
-  <!-- Modal -->
-  <div class="modal fade" id="mastermind" tabindex="-1" role="image"
-        aria-labelledby="mastermind-Label">
-    <div class="modal-dialog modal-lg" role="image">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal"
-                  aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <%= image_tag("ruby/mastermind.png",
-                        alt: "Mastermind Gameplay",
-                        class: "modal-img")%>
-        </div>
-      </div>
-    </div>
+<div class="row">
+  <div class="col m8 s12">
+    <p>
+      One of my simpler Ruby projects was to create a command line version of
+      <%= link_to "Mastermind", "https://en.wikipedia.org/wiki/Mastermind_(board_game)", target: "_blank"  %>.
+      For this project, there was a focus on Object-Oriented Programming. I also
+      created a weak AI to play with.
+    </p>
+    <p>
+      Check out the code on
+      <%= link_to "GitHub", "https://github.com/davisk4rpi/mastermind", target: "_blank"  %>
+    </p>
+  </div>
+  <!-- Image trigger modals -->
+  <div class="col m4 offset-s1 s10 center-align">
+    <%= image_tag("ruby/mastermind.png",
+                  alt: "Mastermind Gameplay",
+                  class: "responsive-img materialboxed")%>
   </div>
 </div>

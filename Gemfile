@@ -1,13 +1,17 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '5.0.1'
-gem 'bootstrap-sass', '3.3.6'
+# Include Materialize sass https://github.com/mkhairi/materialize-sass
+gem 'materialize-sass', '0.98.0'
+# https://github.com/Angelmmiguel/material_icons
+gem 'material_icons',   '2.2.1'
 gem 'puma',         '3.4.0'
 gem 'sass-rails',   '5.0.6'
 gem 'uglifier',     '3.0.0'
 gem 'coffee-rails', '4.2.1'
 gem 'jquery-rails', '4.1.1'
 gem 'turbolinks',   '5.0.1'
+gem 'jquery-turbolinks', '2.1.0'
 gem 'jbuilder',     '2.4.1'
 
 group :development, :test do

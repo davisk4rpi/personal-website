@@ -1,86 +1,47 @@
-<div class="panel-group" id="laud-socialaccordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="laud-socialheadingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#laud-socialaccordion"
-            href="#laud-socialcollapseOne" aria-expanded="true" aria-controls="laud-socialcollapseOne">
-          Background
-        </a>
-      </h4>
+<ul class="collapsible popout" data-collapsible="expandable">
+  <li>
+    <div class="collapsible-header">
+      <div class="left"><i class="material-icons">flight_takeoff</i></div>
+      <div>Background</div>
     </div>
-    <div id="laud-socialcollapseOne" class="panel-collapse collapse in"
-          role="tabpanel" aria-labelledby="laud-socialheadingOne">
-      <div class="panel-body">
-        <%= render "work_colllection/laud-social/background_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/laud-social/background_body" %>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="laud-socialheadingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse"
-            data-parent="#laud-socialaccordion" href="#laud-socialcollapseTwo" aria-expanded="false"
-            aria-controls="laud-socialcollapseTwo">
-          Meeting With Stakeholders and Designing the Tests
-        </a>
-      </h4>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <div class="left"><i class="material-icons">code</i></div>
+      <div>Meeting With Stakeholders and Designing the Tests</div>
     </div>
-    <div id="laud-socialcollapseTwo" class="panel-collapse collapse"
-          role="tabpanel" aria-labelledby="laud-socialheadingTwo">
-      <div class="panel-body">
-        <%= render "work_colllection/laud-social/planning_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/laud-social/planning_body" %>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="laud-socialheadingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse"
-            data-parent="#laud-socialaccordion" href="#laud-socialcollapseThree"
-            aria-expanded="false" aria-controls="laud-socialcollapseThree">
-          Performing the Tests
-        </a>
-      </h4>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <div class="left"><i class="material-icons">whatshot</i></div>
+      <div>Performing the Tests</div>
     </div>
-    <div id="laud-socialcollapseThree" class="panel-collapse collapse"
-          role="tabpanel" aria-labelledby="laud-socialheadingThree">
-      <div class="panel-body">
-        <%= render "work_colllection/laud-social/testing_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/laud-social/testing_body" %>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="laud-socialheadingFour">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse"
-            data-parent="#laud-socialaccordion" href="#laud-socialcollapseFour" aria-expanded="false"
-            aria-controls="laud-socialcollapseFour">
-          Analyzing the Results
-        </a>
-      </h4>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <div class="left"><i class="material-icons">build</i></div>
+      <div>Analyzing the Results</div>
     </div>
-    <div id="laud-socialcollapseFour" class="panel-collapse collapse"
-          role="tabpanel" aria-labelledby="laud-socialheadingFour">
-      <div class="panel-body">
-        <%= render "work_colllection/laud-social/analyzing_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/laud-social/analyzing_body" %>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="laud-socialheadingFive">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse"
-            data-parent="#laud-socialaccordion" href="#laud-socialcollapseFive" aria-expanded="false"
-            aria-controls="laud-socialcollapseFive">
-          Results
-        </a>
-      </h4>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <div class="left"><i class="material-icons">build</i></div>
+      <div>Results</div>
     </div>
-    <div id="laud-socialcollapseFive" class="panel-collapse collapse"
-          role="tabpanel" aria-labelledby="laud-socialheadingFive">
-      <div class="panel-body">
-        <%= render "work_colllection/laud-social/results_body" %>
-      </div>
+    <div class="collapsible-body container">
+      <%= render "work_colllection/laud-social/results_body" %>
     </div>
-  </div>
-</div>
+  </li>
+</ul>

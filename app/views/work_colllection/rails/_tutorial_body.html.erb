@@ -1,38 +1,37 @@
-<div class="col-md-8">
-  <p>
-    For Rails, my primary learning material has come from
-    <%= link_to "railstutorial.org", "https://www.railstutorial.org/book/frontmatter" %>
-    where I have been building their "sample app". This app is very complex and
-    is meant to mimic some of the core functionality of Twitter. This tutorial
-    has taught me the basics and even some complex applications such as:
-    <ul>
-      <li>Test-Driven Development</li>
-      <li>Password Encryption</li>
-      <li>Database Design and Management</li>
-      <li>Model Validations</li>
-      <li>Error Messages</li>
-      <li>Activation and Password Reset Emails</li>
-      <li>Saving a User's Session Info</li>
-      <li>Image Upload and Storage on AWS</li>
-      <li>Pagination</li>
-      <li>Deployment to Heroku</li>
-    </ul>
-  </p>
-  <p>
-    Check out the latest Heroku deployment
-    <%= link_to "here", "https://vast-ridge-30317.herokuapp.com/" %><br>
-    (may take a little extra time for initial load, the downside of free hosting)
-  </p>
-  <p>
-    And check out the code on
-    <%= link_to "GitHub", "https://github.com/davisk4rpi/railstutorial_sample_app" %>
-  </p>
-</div>
-
-
-<!-- Image trigger modals -->
-<div class="col-md-4">
-  <%= link_to image_tag("rails/sample-app.png",
-                        alt: "Sample App"),
-                        "https://vast-ridge-30317.herokuapp.com/" %>
+<div class="row">
+  <div class="col m8 s12">
+    <p>
+      For Rails, my primary learning material has come from
+      <%= link_to "railstutorial.org", "https://www.railstutorial.org/book/frontmatter", target: "_blank"  %>
+      where I have been building their "sample app". This app is very complex and
+      is meant to mimic some of the core functionality of Twitter. This tutorial
+      has taught me the basics and even some complex applications such as:
+      <ul>
+        <li>Test-Driven Development</li>
+        <li>Password Encryption</li>
+        <li>Database Design and Management</li>
+        <li>Model Validations</li>
+        <li>Error Messages</li>
+        <li>Activation and Password Reset Emails</li>
+        <li>Saving a User's Session Info</li>
+        <li>Image Upload and Storage on AWS</li>
+        <li>Pagination</li>
+        <li>Deployment to Heroku</li>
+      </ul>
+    </p>
+    <p>
+      Check out the latest Heroku deployment
+      <%= link_to "here", "https://vast-ridge-30317.herokuapp.com/", target: "_blank"  %>
+      (may take a little extra time for initial load, the downside of free hosting)
+    </p>
+    <p>
+      And check out the code on
+      <%= link_to "GitHub", "https://github.com/davisk4rpi/railstutorial_sample_app", target: "_blank"  %>
+    </p>
+  </div>
+  <div class="col m4 offset-s2 s8">
+    <%= link_to image_tag("rails/sample-app.png",
+                          alt: "Sample App"),
+                          "https://vast-ridge-30317.herokuapp.com/", target: "_blank"  %>
+  </div>
 </div>

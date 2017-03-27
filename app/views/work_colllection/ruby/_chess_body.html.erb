@@ -1,43 +1,26 @@
-<div class="col-md-8">
-  <p>
-    My most complex pure Ruby project is a command line version of
-    <%= link_to "Chess", "https://en.wikipedia.org/wiki/Chess" %>.
-    This particular project demonstrates much of what I can do with pure Ruby.
-    <ul>
-      <li>Object-Oriented Programing</li>
-      <li>Modularization of Code</li>
-      <li>Object Inheritance</li>
-      <li>Test-Driven Development</li>
-      <li>Serialization (For Saving Games)</li>
-      <li>Recursion (Determining Check/Checkmate)</li>
-    </ul>
-  </p>
-  <p>
-    Check out the code on
-    <%= link_to "GitHub", "https://github.com/davisk4rpi/chess_ruby" %>
-  </p>
-</div>
-<!-- Image trigger modals -->
-<div class="col-md-4">
-  <%= image_tag("ruby/chess.png",
-                alt: "Chess Gameplay",
-                'data-toggle': "modal",
-                'data-target': "#chess")%>
-  <!-- Modal -->
-  <div class="modal fade" id="chess" tabindex="-1" role="image"
-        aria-labelledby="chess-Label">
-    <div class="modal-dialog modal-lg" role="image">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal"
-                  aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <%= image_tag("ruby/chess.png",
-                        alt: "Chess Gameplay",
-                        class: "modal-img")%>
-        </div>
-      </div>
-    </div>
+<div class="row">
+  <div class="col m8 s12">
+    <p>
+      My most complex pure Ruby project is a command line version of
+      <%= link_to "Chess", "https://en.wikipedia.org/wiki/Chess", target: "_blank"  %>.
+      This particular project demonstrates much of what I can do with pure Ruby.
+      <ul>
+        <li>Object-Oriented Programing</li>
+        <li>Modularization of Code</li>
+        <li>Object Inheritance</li>
+        <li>Test-Driven Development</li>
+        <li>Serialization (For Saving Games)</li>
+        <li>Recursion (Determining Check/Checkmate)</li>
+      </ul>
+    </p>
+    <p>
+      Check out the code on
+      <%= link_to "GitHub", "https://github.com/davisk4rpi/chess_ruby", target: "_blank"  %>
+    </p>
+  </div>
+  <div class="col m4 offset-s1 s10 center-align">
+    <%= image_tag("ruby/chess.png",
+                  alt: "Chess Gameplay",
+                  class: "responsive-img materialboxed")%>
   </div>
 </div>

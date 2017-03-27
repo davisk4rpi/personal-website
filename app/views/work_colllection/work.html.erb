@@ -1,19 +1,23 @@
 <% provide(:title, "Work") %>
-<div class="top center jumbotron" >
-  <h1>Work</h1>
-  <p>
-    The most significant projects that I have worked on can be separated into
-    three main categories: as a Boeing engineer, as a User-Centered Design
-    student at the University of Washington, and as a self-taught Software
-    Developer.
-  </p>
-</div>
-<div class="col-md-4 work">
-  <%= render "boeing_tile" %>
-</div>
-<div class="col-md-4 work">
-  <%= render "ucd_tile" %>
-</div>
-<div class="col-md-4 work">
-  <%= render "developer_tile" %>
+<div class="container flow-text center-align" >
+  <div class="row">
+    <h1>Work</h1>
+    <p>
+      The most significant projects that I have worked on can be separated into
+      three main categories: as a self-taught Software
+      Developer, as a Boeing engineer, and as a User-Centered Design
+      student at the University of Washington.
+    </p>
+  </div>
+  <div class="row center-align">
+    <div class="col m4 s10 offset-s1 work">
+      <%= render "developer_tile" %>
+    </div>
+    <div class="col m4 s10 offset-s1 work">
+      <%= render "boeing_tile" %>
+    </div>
+    <div class="col m4 s10 offset-s1 work">
+      <%= render "ucd_tile" %>
+    </div>
+  </div>
 </div>

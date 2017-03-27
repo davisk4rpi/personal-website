@@ -1,69 +1,34 @@
-<div class="panel-group" id="rubyaccordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="rubyheadingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#rubyaccordion"
-            href="#rubycollapseOne" aria-expanded="true" aria-controls="rubycollapseOne">
-          Background
-        </a>
-      </h4>
+<ul class="collapsible popout" data-collapsible="expandable">
+  <li>
+    <div class="collapsible-header">
+      <i class="material-icons">flight_takeoff</i>Background
     </div>
-    <div id="rubycollapseOne" class="panel-collapse collapse in"
-          role="tabpanel" aria-labelledby="rubyheadingOne">
-      <div class="panel-body">
-        <%= render "work_colllection/ruby/background_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/ruby/background_body" %>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="rubyheadingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse"
-            data-parent="#rubyaccordion" href="#rubycollapseTwo" aria-expanded="false"
-            aria-controls="rubycollapseTwo">
-          Chess
-        </a>
-      </h4>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <i class="material-icons">code</i>Chess
     </div>
-    <div id="rubycollapseTwo" class="panel-collapse collapse"
-          role="tabpanel" aria-labelledby="rubyheadingTwo">
-      <div class="panel-body">
-        <%= render "work_colllection/ruby/chess_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/ruby/chess_body" %>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="rubyheadingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse"
-            data-parent="#rubyaccordion" href="#rubycollapseThree"
-            aria-expanded="false" aria-controls="rubycollapseThree">
-          Connect Four
-        </a>
-      </h4>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <i class="material-icons">whatshot</i>Connect Four
     </div>
-    <div id="rubycollapseThree" class="panel-collapse collapse"
-          role="tabpanel" aria-labelledby="rubyheadingThree">
-      <div class="panel-body">
-        <%= render "work_colllection/ruby/connect_four_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/ruby/connect_four_body" %>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="rubyheadingFour">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse"
-            data-parent="#rubyaccordion" href="#rubycollapseFour" aria-expanded="false"
-            aria-controls="rubycollapseFour">
-          Mastermind
-        </a>
-      </h4>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <i class="material-icons">build</i>Mastermind
     </div>
-    <div id="rubycollapseFour" class="panel-collapse collapse"
-          role="tabpanel" aria-labelledby="rubyheadingFour">
-      <div class="panel-body">
-        <%= render "work_colllection/ruby/mastermind_body" %>
-      </div>
+    <div class="collapsible-body">
+      <%= render "work_colllection/ruby/mastermind_body" %>
     </div>
-  </div>
-</div>
+  </li>
+</ul>

@@ -1,8 +1,38 @@
-<header class="navbar navbar-fixed-top navbar-default">
-  <div class="container hidden-xs hidden-sm">
-    <%= render "layouts/header_large" %>
-  </div>
-  <div class="container visible-xs-block visible-sm-block">
-    <%= render "layouts/header_small" %>
-  </div>
+<header>
+  <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <%= render "layouts/work_links" %>
+  </ul>
+  <nav>
+    <div class="nav-wrapper">
+      <%= link_to root_url, class: "brand-logo center-align hover" do %>
+        Kieran P. Davis
+        <span class="subtitle hide-on-small-only"><br>Innovator | Technologist</span>
+      <% end %>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><%= link_to "<i class='material-icons'>home</i>".html_safe, root_url %></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Work<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><%= link_to "Resume", resume_url %></li>
+        <li><%= link_to "About", about_url %></li>
+        <li><%= link_to image_tag("icons/Github.png", alt: "GitHub", class: "icon"), 'https://github.com/davisk4rpi', target: "_blank" %></li>
+        <li><%= link_to image_tag("icons/Linkedin.png", alt: "LinkedIn", class: "icon"), 'https://www.linkedin.com/in/kieran-davis/', target: "_blank" %></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><%= link_to "<i class='material-icons' id='home-icon'>home</i>".html_safe, root_url %></li>
+        <li class="divider"></li>
+        <%= render "layouts/work_links" %>
+        <li class="divider"></li>
+        <li><%= link_to "Resume", resume_url %></li>
+        <li><%= link_to "About", about_url %></li>
+        <li>
+          <%= link_to "#{image_tag("icons/Github.png", alt: "", class: "icon")} GitHub".html_safe, "https://github.com/davisk4rpi", target: "_blank", class: "valign-wrapper" %>
+        </li>
+        <li>
+          <%=  link_to "#{image_tag("icons/Linkedin.png", alt: "", class: "icon")} LinkedIn".html_safe, "https://www.linkedin.com/in/kieran-davis/", target: "_blank", class: "valign-wrapper"  %>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
