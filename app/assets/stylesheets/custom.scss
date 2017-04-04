@@ -12,6 +12,11 @@ $link-color: color("blue", "darken-3") !default;
 
 $sidenav-font-color: $secondary-color !default;
 @import "materialize";
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,700');
+h1, h2, h3, h4, h5, header {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 700;
+}
 
 /* mixins, variables, etc. */
 
