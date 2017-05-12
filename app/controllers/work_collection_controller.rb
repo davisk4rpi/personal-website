@@ -1,4 +1,4 @@
-class WorkColllectionController < ApplicationController
+class WorkCollectionController < ApplicationController
   def work
 
   end

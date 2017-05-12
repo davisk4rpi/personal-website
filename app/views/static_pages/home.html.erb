@@ -1,16 +1,31 @@
 <% provide(:title, "Home") %>
 <div class="container center-align">
   <div class="row">
-    <div class="flow-text">
-      <h1>Welcome!</h1>
-      <%= render 'static_pages/skills' %>
-      <p>
-        This website showcases the work of Kieran P. Davis. I am technology
-        generalist with tangible(valuable) skills in manufacturing engineering and web
-        development. My passion is innovation and connectivity.
-      </p>
+    <h1>Welcome!</h1>
+    <div class="col s12 m6">
+      <div class="flow-text">
+        <%= render 'static_pages/skills' %>
+        <p>
+          This website showcases the work of Kieran P. Davis. I am technology
+          generalist with tangible(valuable) skills in manufacturing engineering and web
+          development. My passion is innovation and connectivity.
+        </p>
+      </div>
     </div>
-    <%= link_to "Check out my work!", work_url, class: "btn waves-effect waves-light z-depth-3" %>
+    <div class="col s12 m6">
+      <div class="col s12 work">
+        <h5>Check out my experience in Fullstack Web development using Rails!</h5>
+        <%= link_to "GO!", work_developer_url, class: "btn btn-default" %>
+      </div>
+      <div class="col s12 work">
+        <h5>Check out my engineering roots as a mechanical engineer at Boeing!</h5>
+        <%= link_to "GO!", work_boeing_url, class: "btn btn-default" %>
+      </div>
+      <div class="col s12 work">
+        <h5>Check out my User-Centered Design Projects from the University of Washington!</h5>
+        <%= link_to "GO!", work_ucd_url, class: "btn btn-default" %>
+      </div>
+    </div>
   </div>
   <%= link_to image_tag("forest.png", alt: "Me", id: "home_photo", class: "z-depth-5"),
               about_url %>
