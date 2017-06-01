@@ -41,6 +41,12 @@ a.hover {
   }
 }
 
+html {
+  background: linear-gradient(color("blue-grey", "lighten-5"), #fff);
+  background: -webkit-linear-gradient(color("blue-grey", "lighten-5"), #fff);
+  background:    -moz-linear-gradient(color("blue-grey", "lighten-5"), #fff);
+}
+
 nav {
   background: linear-gradient(to left top, $primary-color, $primary-color-dark);
   background: -webkit-linear-gradient(to left top, $primary-color, $primary-color-dark);
