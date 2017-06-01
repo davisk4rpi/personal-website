@@ -41,6 +41,12 @@ a.hover {
   }
 }
 
+nav {
+  background: linear-gradient(to left top, $primary-color, $primary-color-dark);
+  background: -webkit-linear-gradient(to left top, $primary-color, $primary-color-dark);
+  background:    -moz-linear-gradient(to left top, $primary-color, $primary-color-dark);
+}
+
 .icon {
   width: 32px;
   display: inline;
